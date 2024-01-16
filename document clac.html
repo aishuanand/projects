@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./document clac_files/app.css">
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <div class="container">
+
+        <table>
+            <tbody><tr>
+                <td colspan="3"><input type="text" id="result" class="screen"></td>
+                <td>
+                    <input type="button" value="c" onclick="clearScreen()" class="clear">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="display(&#39;1&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="display(&#39;2&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="display(&#39;3&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="display(&#39;/&#39;)" class="operator">
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="button" value="4" onclick="display(&#39;4&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="display(&#39;5&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="display(&#39;6&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="display(&#39;-&#39;)" class="operator">
+                </td>
+                </tr>
+                <tr><td>
+                    <input type="button" value="7" onclick="display(&#39;7&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="display(&#39;8&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="display(&#39;9&#39;)" class="number">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="display(&#39;+&#39;)" class="operator">
+                </td>
+                
+                </tr><tr>
+                    <td>
+                        <input type="button" value="." onclick="display(&#39;.&#39;)" class="decimal">
+                    </td>
+                    <td>
+                        <input type="button" value="0" onclick="display(&#39;0&#39;)" class="number">
+                    </td>
+                    <td>
+                        <input type="button" value="=" onclick="solve()" class="equal">
+                    </td>
+                    <td>
+                        <input type="button" value="*" onclick="display(&#39;*&#39;)" class="operator">
+                    </td>
+                </tr>
+                
+            
+                    
+                
+                
+
+                
+
+            
+        </tbody></table>
+    </div>
+    <script src="./document clac_files/appjs.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
