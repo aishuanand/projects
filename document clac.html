@@ -1,88 +1,46 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./document clac_files/app.css">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculator App</h1>
-    <div class="container">
-
-        <table>
-            <tbody><tr>
-                <td colspan="3"><input type="text" id="result" class="screen"></td>
-                <td>
-                    <input type="button" value="c" onclick="clearScreen()" class="clear">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" value="1" onclick="display(&#39;1&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="2" onclick="display(&#39;2&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="3" onclick="display(&#39;3&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="/" onclick="display(&#39;/&#39;)" class="operator">
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    <input type="button" value="4" onclick="display(&#39;4&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="5" onclick="display(&#39;5&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="6" onclick="display(&#39;6&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="-" onclick="display(&#39;-&#39;)" class="operator">
-                </td>
-                </tr>
-                <tr><td>
-                    <input type="button" value="7" onclick="display(&#39;7&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="8" onclick="display(&#39;8&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="9" onclick="display(&#39;9&#39;)" class="number">
-                </td>
-                <td>
-                    <input type="button" value="+" onclick="display(&#39;+&#39;)" class="operator">
-                </td>
-                
-                </tr><tr>
-                    <td>
-                        <input type="button" value="." onclick="display(&#39;.&#39;)" class="decimal">
-                    </td>
-                    <td>
-                        <input type="button" value="0" onclick="display(&#39;0&#39;)" class="number">
-                    </td>
-                    <td>
-                        <input type="button" value="=" onclick="solve()" class="equal">
-                    </td>
-                    <td>
-                        <input type="button" value="*" onclick="display(&#39;*&#39;)" class="operator">
-                    </td>
-                </tr>
-                
-            
+    <section>
+        <div class="container">
+            <div id="display"></div>
+            <div class="buttons">
+                <div class="button">C</div>
+                <div class="button">/</div>
+                <div class="button">*</div>
+                <div class="button">&larr;</div>
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">-</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">+</div>
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">.</div>
+                <div class="button">(</div>
+                <div class="button">0</div>
+                <div class="button">)</div>
+                <div id="equal" class="button">=</div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
+                  
                     
                 
                 
 
                 
 
-            
-        </tbody></table>
-    </div>
-   
-					i
-</body></html>
+        
